@@ -3,6 +3,7 @@ import React from "react";
 import SideNews from "./SideNews";
 import Program from "./Program";
 import Image from "next/image";
+import ResearchProject from "./ResearchProject";
 
 const HeroSection = () => {
   return (
@@ -34,6 +35,13 @@ const HeroSection = () => {
         </p>
 
         <Program />
+
+        <h2 className="font-bold text-2xl text-title mt-12">
+          Research Projects
+        </h2>
+        <ResearchProject/>
+
+        
       </div>
 
       {/* side bar */}
@@ -60,7 +68,7 @@ const HeroSection = () => {
               className=" font-semibold mt-4 inline-block py-2 sm:w-fit rounded-md bg-[#ffffff] hover:bg-secondaryLight  text-primary text-center justify-center items-center m-auto"
               style={{ width: "100%" }}
             >
-              Explore More
+              Take a Survey
             </Link>
           </div>
         </div>
@@ -90,7 +98,9 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">THis will be the head of the npook</h2>
+            <h2 className="text-title font-semibold">
+              THis will be the head of the npook
+            </h2>
           </div>
           <div className="flex flex-row gap-3 mt-8">
             <Image
@@ -105,7 +115,9 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">THis will be the head of the npook</h2>
+            <h2 className="text-title font-semibold">
+              THis will be the head of the npook
+            </h2>
           </div>
           <div className="flex flex-row gap-3 mt-4">
             <Image
@@ -120,7 +132,9 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">THis will be the head of the npook</h2>
+            <h2 className="text-title font-semibold">
+              THis will be the head of the npook
+            </h2>
           </div>
           <div className="flex flex-row gap-3 mt-8">
             <Image
@@ -135,9 +149,12 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">THis will be the head of the npook</h2>
+            <h2 className="text-title font-semibold">
+              THis will be the head of the npook
+            </h2>
           </div>
         </>
+        
       </div>
     </div>
   );

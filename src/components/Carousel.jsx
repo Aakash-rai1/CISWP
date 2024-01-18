@@ -2,8 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import CarouselContent from "./CarouselContent"
+import { Pagination, Autoplay } from "swiper/modules";
+import CarouselContent from "./CarouselContent";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,13 +13,17 @@ const Carousel = () => {
   return (
     <section className="text-black w-full">
       <Swiper
+        loop = 'true'
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
-      >      
-
+      >
         <SwiperSlide className="w-full h-320">
           <Image
             src="/images/slide1.jpg"
@@ -55,6 +59,18 @@ const Carousel = () => {
             <div className="relative w-full h-full">
               {/* Image and black overlay container */}
               <div className="relative w-full h-full">
+                {/* Background Image with Black Overlay */}
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/slide3.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+
+                {/* Image Component */}
                 <Image
                   src="/images/slide3.jpg"
                   alt="Picture of the author"
@@ -67,9 +83,9 @@ const Carousel = () => {
                   height={1500}
                   quality={100}
                 />
-                {/* Black overlay */}
-                <div className="absolute inset-0 bg-black opacity-50"></div>
-              <CarouselContent/>
+
+                {/* Content */}
+                <CarouselContent />
               </div>
             </div>
           </div>

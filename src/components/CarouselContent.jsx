@@ -30,7 +30,7 @@ const CarouselContent = () => {
           href="/"
           className="px-6 border w-full  inline-block py-3 w-full sm:w-fit rounded-md  hover:bg-secondary  text-white"
         >
-          Download CV
+          What We Do
         </Link>
       </div>
     </div>
