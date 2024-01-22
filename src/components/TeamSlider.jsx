@@ -37,6 +37,16 @@ const TeamSlider = () => {
       name: "Victoria",
       role: "Researcher",
     },
+    {
+      imageUrl: "images/team/bronson.png",
+      name: "Bronson Du, M.Sc.",
+      role: "Researcher",
+    },
+    {
+      imageUrl: "images/team/kumar.png",
+      name: "Kumar Soma, M.Sc.",
+      role: "Researcher",
+    },
   ];
   return (
     <div>

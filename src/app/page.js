@@ -1,4 +1,5 @@
 import Carousel from "@/components/Carousel";
+import Footer from "@/components/Footer";
 import Funder from "@/components/Funder";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -11,10 +12,13 @@ export default function Home() {
       <Navbar />
       <Carousel />
       <div className="container mt-12 mx-auto px-16 py-4">
-        <HeroSection/>
+        <HeroSection />
       </div>
-      <TeamSlider/>
-      {/* <Funder/> */}
+      <TeamSlider />
+      <div className="container mt-12 mx-auto px-16 py-4">
+        <Funder />
+      </div>
+      <Footer />
     </main>
   );
 }
