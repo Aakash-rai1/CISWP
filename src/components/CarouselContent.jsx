@@ -5,7 +5,7 @@ import React from "react";
 const CarouselContent = () => {
   return (
     <div className="absolute inset-0 flex flex-col items-center justify-center text-white ">
-      <h2 className="text-center font-bold text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-4xl mb-4 pt-28 sm:text-xs px-4">
+      <h2 className="text-center font-bold text-xl sm:text-xl font-inter md:text-2xl lg:text-4xl xl:text-4xl mb-4 pt-28 sm:text-xs px-4">
         Building capacity for productive and sustainable work
       </h2>
       <p className="text-center px-32 text-xs md:text-xl lg:text-xl hidden sm:block">
@@ -21,7 +21,7 @@ const CarouselContent = () => {
       <div className="flex flex-col gap-4 mt-8 text-center px-4 sm:flex-row md:flex-row lg:flex-row">
         <Link
           href="/#contact"
-          className="px-6 inline-block py-3 w-full sm:w-fit rounded-md bg-primary hover:bg-secondary  text-white"
+          className="px-6 inline-block py-3 w-full sm:w-fit rounded-md bg-primary hover:bg-secondary  text-white font-inter"
         >
           Explore More
         </Link>

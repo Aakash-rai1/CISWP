@@ -4,12 +4,15 @@ import SideNews from "./SideNews";
 import Program from "./Program";
 import Image from "next/image";
 import ResearchProject from "./ResearchProject";
+import { IoMdTime } from "react-icons/io";
+
+import { Jost } from "next/font/google";
 
 const HeroSection = () => {
   return (
-    <div className="grid grid-cols-12 gap-8">
-      <div className="col-span-9">
-        <h2 className="font-bold text-2xl text-title mb-2">
+    <div className="grid grid-cols-12 ">
+      <div className="col-span-full lg:col-span-9">
+        <h2 className="font-bold text-2xl text-title font-inter mb-2">
           Building capacity for productive and sustainable work
         </h2>
         <p className="text-paragraph mb-12">
@@ -25,7 +28,7 @@ const HeroSection = () => {
           and services to advance their capacity and address knowledge gaps.
         </p>
 
-        <h2 className="font-bold text-2xl text-title mb-2">
+        <h2 className="font-bold text-2xl font-inter text-title mb-2">
           CISWP’s research program
         </h2>
         <p className="text-paragraph">
@@ -39,19 +42,17 @@ const HeroSection = () => {
         <h2 className="font-bold text-2xl text-title mt-12">
           Research Projects
         </h2>
-        <ResearchProject/>
-
-        
+        <ResearchProject />
       </div>
 
       {/* side bar */}
-      <div className="col-span-3 justify-end">
+      <div className="col-span-full mt-8 pl-0 lg:col-span-3 justify-end lg:mt-0 lg:pl-8">
         <div
           className="bg-primary rounded-md"
           style={{ height: "auto", width: "100%" }}
         >
           <div className="px-4 py-6">
-            <h3 className="justify-center text-xl font-black">
+            <h3 className="justify-center text-xl font-black font-inter">
               The Ontario Skilled Trades Occupational Exposure and Demands
               Survey
             </h3>
@@ -65,7 +66,7 @@ const HeroSection = () => {
             </p>
             <Link
               href="/#contact"
-              className=" font-semibold mt-4 inline-block py-2 sm:w-fit rounded-md bg-[#ffffff] hover:bg-secondaryLight  text-primary text-center justify-center items-center m-auto"
+              className=" font-bold font-inter mt-4 inline-block py-2 sm:w-fit rounded-md bg-[#ffffff] hover:bg-secondaryLight  text-primary text-center justify-center items-center m-auto"
               style={{ width: "100%" }}
             >
               Take a Survey
@@ -82,12 +83,12 @@ const HeroSection = () => {
         </Link>
 
         <>
-          <h2 className="text-title font-bold mt-12 mb-4">
+          <h2 className="text-title font-bold mt-12 mb-4 font-inter text-xl">
             Trending in Publications
           </h2>
           <div className="flex flex-row gap-3 mt-8">
             <Image
-              src="/images/slide1.jpg"
+              src="/images/p1.png"
               alt="Picture of the author"
               style={{
                 width: "30%",
@@ -98,13 +99,21 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">
-              THis will be the head of the npook
-            </h2>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-title font-semibold">
+                Research & Innovation Impact Report 2022-2023
+              </h2>
+              <div className="flex flex-row gap-1">
+                <IoMdTime style={{ color: "#000000" }} />
+                <p className="text-[#5E5C5C] text-xs font-medium">
+                  January 21, 2022
+                </p>
+              </div>
+            </div>
           </div>
           <div className="flex flex-row gap-3 mt-8">
             <Image
-              src="/images/slide1.jpg"
+              src="/images/p4.png"
               alt="Picture of the author"
               style={{
                 width: "30%",
@@ -115,13 +124,22 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">
-              THis will be the head of the npook
-            </h2>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-title font-semibold">
+              Fatigue Risk Management for First Responders: State of Knowledge
+
+              </h2>
+              <div className="flex flex-row gap-1">
+                <IoMdTime style={{ color: "#000000" }} />
+                <p className="text-[#5E5C5C] text-xs font-medium">
+                  January 21, 2022
+                </p>
+              </div>
+            </div>
           </div>
           <div className="flex flex-row gap-3 mt-4">
             <Image
-              src="/images/slide1.jpg"
+              src="/images/p3.png"
               alt="Picture of the author"
               style={{
                 width: "30%",
@@ -132,13 +150,23 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">
-              THis will be the head of the npook
-            </h2>
+            
+            <div className="flex flex-col gap-2">
+              <h2 className="text-title font-semibold">
+              Fatigue Risk Management for First Responders: Current Landscape of
+              Perspectives, Policies...
+              </h2>
+              <div className="flex flex-row gap-1">
+                <IoMdTime style={{ color: "#000000" }} />
+                <p className="text-[#5E5C5C] text-xs font-medium">
+                  January 25, 2023
+                </p>
+              </div>
+            </div>
           </div>
           <div className="flex flex-row gap-3 mt-8">
             <Image
-              src="/images/slide1.jpg"
+              src="/images/p5.png"
               alt="Picture of the author"
               style={{
                 width: "30%",
@@ -149,12 +177,20 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <h2 className="text-title font-semibold">
-              THis will be the head of the npook
-            </h2>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-title font-semibold">
+              Work Disability Management of PTSI in Paramedic Service
+              Organizations: A Needs Assessment
+              </h2>
+              <div className="flex flex-row gap-1">
+                <IoMdTime style={{ color: "#000000" }} />
+                <p className="text-[#5E5C5C] text-xs font-medium">
+                  December 23, 2022
+                </p>
+              </div>
+            </div>
           </div>
         </>
-        
       </div>
     </div>
   );

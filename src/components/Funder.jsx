@@ -7,7 +7,7 @@ import Marquee from "react-fast-marquee";
 const Funder = () => {
   return (
     <div>
-      <h2 className="font-bold text-2xl text-title mb-8">
+      <h2 className="font-bold text-2xl text-title mb-8 font-inter">
         Our Funders
       </h2>
 

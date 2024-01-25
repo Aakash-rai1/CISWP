@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+
 import { IoMailOutline } from "react-icons/io5";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { TiLocationOutline } from "react-icons/ti";
@@ -10,6 +11,14 @@ const Footer = () => {
   const email = "ciswp@conestogac.on.ca";
   const phoneNumber = "+1519-748-5220";
   const address = "25 Reuter Dr, Cambridge, ON N3E 1A9, Canada";
+
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
 
   return (
     <div className="relative bg-[#2D2D2D] w-full h-max mt-64 ">
@@ -76,20 +85,42 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-row gap-2 mt-6 mb-2">
-              <div className="bg-[#2867B2] h-10 w-10 rounded-md flex items-center justify-center">
+              <Link
+                href="https://ca.linkedin.com/company/canadian-institute-for-safety-wellness-and-performance"
+                className="bg-[#2867B2] h-10 w-10 rounded-md flex items-center justify-center"
+              >
                 <FaLinkedinIn className="text-white h-6 w-6" />
-              </div>
-              <div className="bg-[#1DA1F2] h-10 w-10 rounded-md flex items-center justify-center">
+              </Link>
+              <Link
+                href="https://twitter.com/ciswp_conestoga?lang=en"
+                className="bg-[#1DA1F2] h-10 w-10 rounded-md flex items-center justify-center"
+              >
                 <FaTwitter className="text-white h-6 w-6" />
-              </div>
-              <div className="bg-[#F90018] h-10 w-10 rounded-md flex items-center justify-center">
+              </Link>
+              <Link
+                href="https://www.youtube.com/channel/UCWGG-XumHfuDHfonokyRFmg"
+                className="bg-[#F90018] h-10 w-10 rounded-md flex items-center justify-center"
+              >
                 <FaYoutube className="text-white h-6 w-6" />
-              </div>
+              </Link>
             </div>
           </div>
 
-          <div className="bg-primary w-full lg:w-1/2  ">
-            <p>map</p>
+          <div className="bg-primary w-full lg:w-1/2 h-full ">
+            <div style={{ width: "100%", height: "320px" }}>
+              <Image
+                src="/images/map.jpg"
+                alt="Picture of the author"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover",
+                }}
+                width={1500}
+                height={1500}
+                quality={100}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -98,16 +129,45 @@ const Footer = () => {
 
       <div className="flex flex-row justify-between px-48 mt-80 mb-40">
         <div className="w-1/2">
-          <h2 className="font-semibold text-xl mb-4"> COnsetoga Admin</h2>
+          <h2 className="font-semibold text-xl mb-4 font-inter">
+            {" "}
+            Consetoga Admin
+          </h2>
           <p>299 Doon Valley Drive</p>
           <p>Kitcherner, Ontario N2G 4M4, Canada</p>
           <p>Phone: 519-748-5220</p>
         </div>
         <div className="w-1/2 items-end justify-end text-right">
-          <h2 className="font-semibold text-xl mb-4"> Quick Links</h2>
-          <Link href="/#contact" className="text-[#a8a8a8]">
-            Giving to Conestoga
-          </Link>
+          <h2 className="font-semibold text-xl mb-4 font-inter">
+            {" "}
+            Quick Links
+          </h2>
+          <div className="flex flex-col">
+            <Link
+              href="/#contact"
+              className="text-[#a8a8a8] hover:text-secondaryLight"
+            >
+              Giving to Conestoga
+            </Link>
+            <Link
+              href="/#contact"
+              className="text-[#a8a8a8] hover:text-secondaryLight"
+            >
+              Policies & procedures
+            </Link>
+            <Link
+              href="/#contact"
+              className="text-[#a8a8a8] hover:text-secondaryLight"
+            >
+              Visit us
+            </Link>
+            <Link
+              href="/#contact"
+              className="text-[#a8a8a8] hover:text-secondaryLight"
+            >
+              Applying to Conestoga
+            </Link>
+          </div>
         </div>
       </div>
     </div>
