@@ -107,19 +107,11 @@ const Footer = () => {
           </div>
 
           <div className="bg-primary w-full lg:w-1/2 h-full ">
-            <div style={{ width: "100%", height: "320px" }}>
-              <Image
-                src="/images/map.jpg"
-                alt="Picture of the author"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  objectFit: "cover",
-                }}
-                width={1500}
-                height={1500}
-                quality={100}
-              />
+            <div style={{ width: "100%", height: "320px",  backgroundImage:
+                " url('/images/map.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",}}>
+
             </div>
           </div>
         </div>

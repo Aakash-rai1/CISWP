@@ -15,10 +15,7 @@ const news = [
       title: "CISWP researcher leads Canadian committee for development of international standards",
       date: "August 24, 2023",
     },
-    {
-      title: "CISWP researcher leads Canadian committee for development of international standards",
-      date: "August 24, 2023",
-    },
+    
     
   ];
 

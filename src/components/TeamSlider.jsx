@@ -48,6 +48,8 @@ const TeamSlider = () => {
       role: "Researcher",
     },
   ];
+
+  
   return (
     <div>
       <h1

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Funder from "@/components/Funder";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Roadmap from "@/components/Roadmap";
 import TeamSlider from "@/components/TeamSlider";
 import Image from "next/image";
 
