@@ -10,28 +10,56 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const navLinks = [
   {
-    title: "About Us",
+    title: "About CISWP",
     path: "#about",
+    submenu: [
+      { title: "Mission & Values", path: "#mission" },
+      { title: "People", path: "#people" },
+      { title: "Contact Us", path: "#contact" },
+    ],
   },
   {
     title: "Applied Research",
     path: "#projects",
+    submenu: [
+      { title: "Skilled Trades", path: "#skilled-trades" },
+      { title: "Healthcare & First Response", path: "#healthcare" },
+      { title: "Workforce Development", path: "#workforce" },
+      { title: "EDI & Accessibility", path: "#edi" },
+    ],
   },
   {
     title: "Research Labs",
-    path: "#contact",
+    path: "#labs",
+    submenu: [
+      { title: "START Lab", path: "#start-lab" },
+      { title: "STRIDE LAB", path: "#stride-lab" },
+      { title: "Field to Lab to Field", path: "#field-lab" },
+    ],
   },
   {
     title: "Education",
-    path: "#about",
+    path: "#education",
+    submenu: [
+      { title: "Link 1", path: "#link1" },
+      { title: "Link 2", path: "#link2" },
+    ],
   },
   {
     title: "Publications & Resources",
-    path: "#projects",
+    path: "#publications",
+    submenu: [
+      { title: "Scientific Report & Articles", path: "reports" },
+      { title: "Webinars", path: "#webinars" },
+    ],
   },
   {
     title: "News & Events",
-    path: "#contact",
+    path: "#news-events",
+    submenu: [
+      { title: "News", path: "news" },
+      { title: "Events", path: "#events" },
+    ],
   },
 ];
 
@@ -77,19 +105,26 @@ const Navbar = () => {
           )}
         </div>
 
-        
-
-        <div className="menu hidden lg:block lg:w-auto" id="navbar">
-          <ul className="flex p-4 lg:p-0 lg:flex-row lg:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
+        <div className=" hidden lg:block lg:w-auto">
+          <ul className="menu menu-horizontal px-1">
+            {navLinks.map((navLink, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <details>
+                  <summary>{navLink.title}</summary>
+                  <ul className="p-2 bg-base-100 rounded-t-none">
+                    {navLink.submenu.map((sublink, subindex) => (
+                      <li key={subindex}>
+                        <a href={sublink.path}>{sublink.title}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? <MenuOverlay /> : null}
     </nav>
   );
 };

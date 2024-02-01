@@ -58,14 +58,14 @@ const Footer = () => {
             <div className="flex flex-col  justify-start gap-2 lg:gap-8  lg:flex-row">
               <div className="flex flex-row gap-2 items-center">
                 <IoMailOutline style={{ color: "#087D73" }} />
-                <p className="text-primary">
+                <p className="text-primaryG">
                   {" "}
                   <a href={`mailto:${email}`}>{email}</a>.
                 </p>
               </div>
               <div className="flex flex-row gap-2 items-center">
                 <MdOutlineLocalPhone style={{ color: "#087D73" }} />
-                <p className="text-primary">
+                <p className="text-primaryG">
                   {" "}
                   <a href={`tel:${phoneNumber}`}>{phoneNumber}</a> Ext. 7115
                 </p>
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-row gap-2 items-center mt-2">
               <TiLocationOutline style={{ color: "#087D73" }} />
-              <p className="text-primary">
+              <p className="text-primaryG">
                 {" "}
                 <a
                   href={`https://maps.app.goo.gl/nuwoUQqVXjs5sHqF9`}
@@ -106,7 +106,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="bg-primary w-full lg:w-1/2 h-full ">
+          <div className="bg-primaryG w-full lg:w-1/2 h-full ">
             <div style={{ width: "100%", height: "320px",  backgroundImage:
                 " url('/images/map.jpg')",
               backgroundSize: "cover",

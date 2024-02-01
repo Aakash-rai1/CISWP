@@ -57,14 +57,14 @@ const TeamSlider = () => {
         style={{ width: "55%" }}
       >
         We’ve got an entire team <br /> dedicated to{" "}
-        <span className="text-primary">
+        <span className="text-primaryG">
           {" "}
           Safety, Wellness <br /> & Performance.
         </span>{" "}
       </h1>
 
       <Marquee
-        className="font-bold text-primary mb-28 mt-12 "
+        className="font-bold text-primaryG mb-28 mt-12 "
         style={{ height: "312px", width: "100%", overflow: "hidden" }}
         pauseOnHover="true"
         speed={120}

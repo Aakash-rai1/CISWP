@@ -17,8 +17,8 @@ module.exports = {
       },
     },
     colors:{
-      primary:"#087D73",
-      secondary:"#967c4f",
+      primaryG:"#087D73",
+      secondaryO:"#967c4f",
       secondaryLight:"#FCB03C",
       paragraph:"#303030",
       title:"#232323"
@@ -32,5 +32,5 @@ module.exports = {
         ]
       },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

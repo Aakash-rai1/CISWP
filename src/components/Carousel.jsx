@@ -48,7 +48,7 @@ const Carousel = () => {
                   alt="Picture of the author"
                   style={{
                     width: "100%",
-                    height: 580,
+                    height: 480,
                     objectFit: "cover",
                   }}
                   width={1500}
@@ -84,7 +84,7 @@ const Carousel = () => {
                   alt="Picture of the author"
                   style={{
                     width: "100%",
-                    height: 580,
+                    height: 480,
                     objectFit: "cover",
                   }}
                   width={1500}
@@ -120,7 +120,7 @@ const Carousel = () => {
                   alt="Picture of the author"
                   style={{
                     width: "100%",
-                    height: 580,
+                    height: 480,
                     objectFit: "cover",
                   }}
                   width={1500}

@@ -21,14 +21,14 @@ const CarouselContent = () => {
       <div className="flex flex-col gap-4 mt-8 text-center px-4 sm:flex-row md:flex-row lg:flex-row">
         <Link
           href="/#contact"
-          className="px-6 inline-block py-3 w-full sm:w-fit rounded-md bg-primary hover:bg-secondary  text-white font-inter"
+          className="px-6 inline-block py-3 w-full sm:w-fit rounded-md bg-primaryG hover:bg-secondaryO  text-white font-inter"
         >
           Explore More
         </Link>
 
         <Link
           href="/"
-          className="px-6 border w-full  inline-block py-3 w-full sm:w-fit rounded-md  hover:bg-secondary  text-white"
+          className="px-6 border w-full  inline-block py-3 w-full sm:w-fit rounded-md  hover:bg-secondaryO  text-white"
         >
           What We Do
         </Link>

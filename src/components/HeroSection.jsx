@@ -48,7 +48,7 @@ const HeroSection = () => {
       {/* side bar */}
       <div className="col-span-full mt-8 pl-0 lg:col-span-3 justify-end lg:mt-0 lg:pl-8">
         <div
-          className="bg-primary rounded-md"
+          className="bg-primaryG rounded-md"
           style={{ height: "auto", width: "100%" }}
         >
           <div className="px-4 py-6">
@@ -66,7 +66,7 @@ const HeroSection = () => {
             </p>
             <Link
               href="/#contact"
-              className=" font-bold font-inter mt-4 inline-block py-2 sm:w-fit rounded-md bg-[#ffffff] hover:bg-secondaryLight  text-primary text-center justify-center items-center m-auto"
+              className=" font-bold font-inter mt-4 inline-block py-2 sm:w-fit rounded-md bg-[#ffffff] hover:bg-secondaryLight  text-primaryG text-center justify-center items-center m-auto"
               style={{ width: "100%" }}
             >
               Take a Survey
@@ -77,7 +77,7 @@ const HeroSection = () => {
         <SideNews />
 
         <Link href={"/"}>
-          <p className="text-sm text-primary hover:text-secondary hover:font-medium">
+          <p className="text-sm text-primaryG hover:text-secondaryO hover:font-medium">
             Explore More{" "}
           </p>
         </Link>
