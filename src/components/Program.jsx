@@ -36,7 +36,7 @@ const Program = () => {
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
           <div className="absolute z-10 p-16 align-middle">
             <h2 className="font-inter font-bold text-xl mb-1">Knowledge transfer & Exchange</h2>
-            <p className="text-sm lg:text-base">
+            <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
               research knowledge into practice and decision-making. With immense
               resources invested into research, the knowledge generated should
@@ -64,7 +64,7 @@ const Program = () => {
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className="absolute z-10 p-16 align-middle">
             <h2 className="font-inter font-bold text-xl mb-1">Musculoskeletal Health</h2>
-            <p className="text-sm lg:text-base">
+            <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
               research knowledge into practice and decision-making. With immense
               resources invested into research, the knowledge generated should
@@ -92,7 +92,7 @@ const Program = () => {
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className="absolute z-10 p-16 align-middle">
             <h2 className="font-inter font-bold text-xl mb-1">Mental Health & Wellness</h2>
-            <p className="text-sm lg:text-base">
+            <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
               research knowledge into practice and decision-making. With immense
               resources invested into research, the knowledge generated should
@@ -120,7 +120,7 @@ const Program = () => {
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className="absolute z-10 p-16 align-middle">
             <h2 className="font-inter font-bold text-xl mb-1">Organizational Management System</h2>
-            <p className="text-sm lg:text-base">
+            <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
               research knowledge into practice and decision-making. With immense
               resources invested into research, the knowledge generated should
@@ -148,7 +148,7 @@ const Program = () => {
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className="absolute z-10 p-16 align-middle">
             <h2 className="font-inter font-bold text-xl mb-1">Disability & Employment</h2>
-            <p className="text-sm lg:text-base">
+            <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
               research knowledge into practice and decision-making. With immense
               resources invested into research, the knowledge generated should
@@ -177,7 +177,7 @@ const Program = () => {
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className="absolute z-10 p-16 align-middle">
             <h2 className="font-inter font-bold text-xl mb-1">Building workforce for tomorrow</h2>
-            <p className="text-sm lg:text-base">
+            <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
               research knowledge into practice and decision-making. With immense
               resources invested into research, the knowledge generated should

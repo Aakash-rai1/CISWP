@@ -1,3 +1,4 @@
+"use client";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
@@ -5,6 +6,44 @@ import React from "react";
 import { IoMdTime } from "react-icons/io";
 
 const Page = () => {
+  const cardData = [
+    {
+      backgroundImage: "/images/p5.png",
+      title: "Fatigue Risk Management for First Responders: State of Knowledge",
+      date: "January 21, 2022",
+    },
+    {
+      backgroundImage: "/images/p4.png",
+      title: "Understanding Human Fatigue: A Comprehensive Study",
+      date: "February 15, 2022",
+    },
+    {
+      backgroundImage: "/images/p3.png",
+      title: "The Impact of Sleep Deprivation on Cognitive Performance",
+      date: "March 10, 2022",
+    },
+    {
+      backgroundImage: "/images/p1.png",
+      title: "Strategies for Enhancing Resilience in High-Stress Environments",
+      date: "April 5, 2022",
+    },
+    {
+      backgroundImage: "/images/p4.png",
+      title: "Understanding Human Fatigue: A Comprehensive Study",
+      date: "February 15, 2022",
+    },
+    {
+      backgroundImage: "/images/p3.png",
+      title: "The Impact of Sleep Deprivation on Cognitive Performance",
+      date: "March 10, 2022",
+    },
+    {
+      backgroundImage: "/images/p1.png",
+      title: "Strategies for Enhancing Resilience in High-Stress Environments",
+      date: "April 5, 2022",
+    },
+  ];
+
   return (
     <>
       <div className="flex flex-col min-h-screen bg-[#F4F4F5]  ">
@@ -165,170 +204,34 @@ const Page = () => {
 
           {/* publications */}
           <div className="col-span-full lg:col-span-9">
-            <h2 className="font-bold text-2xl text-title font-inter mb-8">
-              Publications
-            </h2>
-            <div className="grid grid-cols-12 gap-8">
-              <div className="group col-span-3 flex flex-col ">
-                <div
-                  className=" h-200 bg-white rounded-sm shadow-md "
-                  style={{
-                    height: "350px",
-                    backgroundImage: " url('/images/p5.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    marginBottom: "16px",
-                    
-                  }}
-                />
-                <h1 className="text-title text-md font-semibold mb-2">
-                  Fatigue Risk Managemtn for first Responsers: State of
-                  Knowledge
-                </h1>
-                <div className="flex flex-row gap-2">
-                  <IoMdTime style={{ color: "#000000" }} />
-                  <p className="text-[#5E5C5C] text-xs font-medium">
-                    January 21, 2022
-                  </p>
-                </div>
-              </div>
+  <h2 className="font-bold text-2xl text-title font-inter mb-8">
+    Publications
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    {cardData.map((card, index) => (
+      <div key={index} className="flex flex-col cursor-pointer">
+        <div
+          className="h-96 sm:h-80 md:h-72 lg:h-64 bg-white rounded-sm shadow-md hover:shadow-xl"
+          style={{
+            backgroundImage: `url('${card.backgroundImage}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            marginBottom: "16px",
+            transition: "background-size 0.3s ease",
+          }}
+          onMouseEnter={(e) => (e.target.style.backgroundSize = "102%")}
+          onMouseLeave={(e) => (e.target.style.backgroundSize = "cover")}
+        />
+        <h1 className="text-title text-md font-semibold mb-2">{card.title}</h1>
+        <div className="flex flex-row gap-2">
+          <IoMdTime style={{ color: "#000000" }} />
+          <p className="text-[#5E5C5C] text-xs font-medium">{card.date}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
-              <div className="col-span-3 flex flex-col ">
-                <div
-                  className=" h-200 bg-white rounded-sm shadow-md"
-                  style={{
-                    height: "350px",
-                    backgroundImage: " url('/images/p4.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    marginBottom: "16px",
-                  }}
-                />
-                <h1 className="text-title text-md font-semibold mb-2">
-                  Fatigue Risk Managemtn for first Responsers: State of
-                  Knowledge
-                </h1>
-                <div className="flex flex-row gap-2">
-                  <IoMdTime style={{ color: "#000000" }} />
-                  <p className="text-[#5E5C5C] text-xs font-medium">
-                    January 21, 2022
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-3 flex flex-col ">
-                <div
-                  className=" h-200 bg-white rounded-sm shadow-md"
-                  style={{
-                    height: "350px",
-                    backgroundImage: " url('/images/p3.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    marginBottom: "16px",
-                  }}
-                />
-                <h1 className="text-title text-md font-semibold mb-2">
-                  Fatigue Risk Managemtn for first Responsers: State of
-                  Knowledge
-                </h1>
-                <div className="flex flex-row gap-2">
-                  <IoMdTime style={{ color: "#000000" }} />
-                  <p className="text-[#5E5C5C] text-xs font-medium">
-                    January 21, 2022
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-3 flex flex-col ">
-                <div
-                  className=" h-200 bg-white rounded-sm shadow-md"
-                  style={{
-                    height: "350px",
-                    backgroundImage: " url('/images/p1.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    marginBottom: "16px",
-                  }}
-                />
-                <h1 className="text-title text-md font-semibold mb-2">
-                  Fatigue Risk Managemtn for first Responsers: State of
-                  Knowledge
-                </h1>
-                <div className="flex flex-row gap-2">
-                  <IoMdTime style={{ color: "#000000" }} />
-                  <p className="text-[#5E5C5C] text-xs font-medium">
-                    January 21, 2022
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-3 flex flex-col ">
-                <div
-                  className=" h-200 bg-white rounded-sm shadow-md"
-                  style={{
-                    height: "350px",
-                    backgroundImage: " url('/images/p4.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    marginBottom: "16px",
-                  }}
-                />
-                <h1 className="text-title text-md font-semibold mb-2">
-                  Fatigue Risk Managemtn for first Responsers: State of
-                  Knowledge
-                </h1>
-                <div className="flex flex-row gap-2">
-                  <IoMdTime style={{ color: "#000000" }} />
-                  <p className="text-[#5E5C5C] text-xs font-medium">
-                    January 21, 2022
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-3 flex flex-col ">
-                <div
-                  className=" h-200 bg-white rounded-sm shadow-md"
-                  style={{
-                    height: "350px",
-                    backgroundImage: " url('/images/p3.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    marginBottom: "16px",
-                  }}
-                />
-                <h1 className="text-title text-md font-semibold mb-2">
-                  Fatigue Risk Managemtn for first Responsers: State of
-                  Knowledge
-                </h1>
-                <div className="flex flex-row gap-2">
-                  <IoMdTime style={{ color: "#000000" }} />
-                  <p className="text-[#5E5C5C] text-xs font-medium">
-                    January 21, 2022
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-3 flex flex-col ">
-                <div
-                  className=" h-200 bg-white rounded-sm shadow-md"
-                  style={{
-                    height: "350px",
-                    backgroundImage: " url('/images/p1.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    marginBottom: "16px",
-                  }}
-                />
-                <h1 className="text-title text-md font-semibold mb-2">
-                  Fatigue Risk Managemtn for first Responsers: State of
-                  Knowledge
-                </h1>
-                <div className="flex flex-row gap-2">
-                  <IoMdTime style={{ color: "#000000" }} />
-                  <p className="text-[#5E5C5C] text-xs font-medium">
-                    January 21, 2022
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 2 */}
-            </div>
-          </div>
         </div>
         <Footer />
       </div>

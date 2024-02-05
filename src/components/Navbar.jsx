@@ -32,7 +32,7 @@ const navLinks = [
     title: "Research Labs",
     path: "#labs",
     submenu: [
-      { title: "START Lab", path: "#start-lab" },
+      { title: "START Lab", path: "start" },
       { title: "STRIDE LAB", path: "#stride-lab" },
       { title: "Field to Lab to Field", path: "#field-lab" },
     ],

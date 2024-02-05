@@ -15,7 +15,7 @@ const HeroSection = () => {
         <h2 className="font-bold text-2xl text-title font-inter mb-2">
           Building capacity for productive and sustainable work
         </h2>
-        <p className="text-paragraph mb-12">
+        <p className="text-paragraph mb-12 text-justify" >
           The Canadian Institute for Safety, Wellness & Performance (CISWP) is
           committed to building productive and sustainable workplaces through a
           collaborative and transdisciplinary approach. CISWP’s goal is to
