@@ -66,7 +66,7 @@ const HeroSection = () => {
             </p>
             <Link
               href="/#contact"
-              className=" font-bold font-inter mt-4 inline-block py-2 sm:w-fit rounded-md bg-[#ffffff] hover:bg-secondaryLight  text-primaryG text-center justify-center items-center m-auto"
+              className=" font-bold font-inter mt-4 inline-block py-2 sm:w-fit rounded-md bg-white hover:bg-secondaryLight  text-primaryG text-center justify-center items-center m-auto"
               style={{ width: "100%" }}
             >
               Take a Survey

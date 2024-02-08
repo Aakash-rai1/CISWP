@@ -113,7 +113,7 @@ const Page = () => {
                     <summary>Categories</summary>
                     <ul className="rounded-t-none">
                       <div className="form-control mt-2 mb-3">
-                        <label className="flex items-center gap-2  [#ffffff]space-normal">
+                        <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
@@ -211,7 +211,7 @@ const Page = () => {
               {cardData.map((card, index) => (
                 <div key={index} className="flex flex-col cursor-pointer">
                   <div
-                    className="h-96 sm:h-80 md:h-72 lg:h-64 bg-[#ffffff] rounded-sm shadow-md hover:shadow-xl"
+                    className="h-96 sm:h-80 md:h-72 lg:h-64 bg-white rounded-sm shadow-md hover:shadow-xl"
                     style={{
                       backgroundImage: `url('${card.backgroundImage}')`,
                       backgroundSize: "cover",

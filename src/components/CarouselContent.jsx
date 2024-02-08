@@ -4,7 +4,7 @@ import React from "react";
 
 const CarouselContent = () => {
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-[#ffffff] ">
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-white ">
       <h2 className="text-center font-bold text-xl sm:text-xl font-inter md:text-2xl lg:text-4xl xl:text-4xl mb-4 pt-28 sm:text-xs px-4">
         Building capacity for productive and sustainable work
       </h2>

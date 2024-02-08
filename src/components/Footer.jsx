@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <div className="relative bg-[#2D2D2D] w-full h-max mt-64 ">
       <div
-        className="absolute bg-[#ffffff] px-8 py-4"
+        className="absolute bg-white px-8 py-4"
         style={{
           width: "80%",
           height: "auto",
@@ -89,19 +89,19 @@ const Footer = () => {
                 href="https://ca.linkedin.com/company/canadian-institute-for-safety-wellness-and-performance"
                 className="bg-[#2867B2] h-10 w-10 rounded-md flex items-center justify-center"
               >
-                <FaLinkedinIn className="text-[#ffffff] h-6 w-6" />
+                <FaLinkedinIn className="text-white h-6 w-6" />
               </Link>
               <Link
                 href="https://twitter.com/ciswp_conestoga?lang=en"
                 className="bg-[#1DA1F2] h-10 w-10 rounded-md flex items-center justify-center"
               >
-                <FaTwitter className="text-[#ffffff] h-6 w-6" />
+                <FaTwitter className="text-white h-6 w-6" />
               </Link>
               <Link
                 href="https://www.youtube.com/channel/UCWGG-XumHfuDHfonokyRFmg"
                 className="bg-[#F90018] h-10 w-10 rounded-md flex items-center justify-center"
               >
-                <FaYoutube className="text-[#ffffff] h-6 w-6" />
+                <FaYoutube className="text-white h-6 w-6" />
               </Link>
             </div>
           </div>
