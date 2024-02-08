@@ -113,7 +113,7 @@ const Page = () => {
                     <summary>Categories</summary>
                     <ul className="rounded-t-none">
                       <div className="form-control mt-2 mb-3">
-                        <label className="flex items-center gap-2">
+                        <label className="flex items-center gap-2  [#ffffff]space-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
@@ -204,34 +204,41 @@ const Page = () => {
 
           {/* publications */}
           <div className="col-span-full lg:col-span-9">
-  <h2 className="font-bold text-2xl text-title font-inter mb-8">
-    Publications
-  </h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-    {cardData.map((card, index) => (
-      <div key={index} className="flex flex-col cursor-pointer">
-        <div
-          className="h-96 sm:h-80 md:h-72 lg:h-64 bg-white rounded-sm shadow-md hover:shadow-xl"
-          style={{
-            backgroundImage: `url('${card.backgroundImage}')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            marginBottom: "16px",
-            transition: "background-size 0.3s ease",
-          }}
-          onMouseEnter={(e) => (e.target.style.backgroundSize = "102%")}
-          onMouseLeave={(e) => (e.target.style.backgroundSize = "cover")}
-        />
-        <h1 className="text-title text-md font-semibold mb-2">{card.title}</h1>
-        <div className="flex flex-row gap-2">
-          <IoMdTime style={{ color: "#000000" }} />
-          <p className="text-[#5E5C5C] text-xs font-medium">{card.date}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
+            <h2 className="font-bold text-2xl text-title font-inter mb-8">
+              Publications
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              {cardData.map((card, index) => (
+                <div key={index} className="flex flex-col cursor-pointer">
+                  <div
+                    className="h-96 sm:h-80 md:h-72 lg:h-64 bg-[#ffffff] rounded-sm shadow-md hover:shadow-xl"
+                    style={{
+                      backgroundImage: `url('${card.backgroundImage}')`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      marginBottom: "16px",
+                      transition: "background-size 0.3s ease",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.target.style.backgroundSize = "102%")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.target.style.backgroundSize = "cover")
+                    }
+                  />
+                  <h1 className="text-title text-md font-semibold mb-2">
+                    {card.title}
+                  </h1>
+                  <div className="flex flex-row gap-2">
+                    <IoMdTime style={{ color: "#000000" }} />
+                    <p className="text-[#5E5C5C] text-xs font-medium">
+                      {card.date}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         <Footer />
       </div>

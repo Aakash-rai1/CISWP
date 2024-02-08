@@ -18,13 +18,13 @@ const ResearchProject = () => {
           backgroundPosition: "center",
         }}
       >
-        <h2 className="text-white font-bold px-4 py-8 text-xl font-inter">
+        <h2 className="text-[#ffffff] font-bold px-4 py-8 text-xl font-inter">
           OSH RESEARCH IN SKILL TRADES
         </h2>
 
         {/* Hidden Link initially, shown at the bottom on hover */}
         <Link
-          className="absolute bottom-0 hidden group-hover:block text-white font-bold px-4 py-4 w-full "
+          className="absolute bottom-0 hidden group-hover:block text-[#ffffff] font-bold px-4 py-4 w-full "
           href={"/"}
         >
           <div className="flex flex-row gap-2 justify-center items-center border rounded-md  py-2">
@@ -46,13 +46,13 @@ const ResearchProject = () => {
           backgroundPosition: "center",
         }}
       >
-        <h2 className="text-white font-bold px-4 py-8 text-2xl font-inter">
+        <h2 className="text-[#ffffff] font-bold px-4 py-8 text-2xl font-inter">
           Optimizing work from home
         </h2>
 
         {/* Hidden Link initially, shown at the bottom on hover */}
         <Link
-          className="absolute bottom-0 hidden group-hover:block text-white font-bold px-4 py-4 w-full "
+          className="absolute bottom-0 hidden group-hover:block text-[#ffffff] font-bold px-4 py-4 w-full "
           href={"/"}
         >
           <div className="flex flex-row gap-2 justify-center items-center border rounded-md  py-2">
@@ -74,13 +74,13 @@ const ResearchProject = () => {
           backgroundPosition: "center",
         }}
       >
-        <h2 className="text-white font-bold px-4 py-8 text-2xl font-inter">
+        <h2 className="text-[#ffffff] font-bold px-4 py-8 text-2xl font-inter">
           Supporting Canada&apos;s frontline
         </h2>
 
         {/* Hidden Link initially, shown at the bottom on hover */}
         <Link
-          className="absolute bottom-0 hidden group-hover:block text-white font-bold px-4 py-4 w-full "
+          className="absolute bottom-0 hidden group-hover:block text-[#ffffff] font-bold px-4 py-4 w-full "
           href={"/"}
         >
           <div className="flex flex-row gap-2 justify-center items-center border rounded-md  py-2">
@@ -103,13 +103,13 @@ const ResearchProject = () => {
           
         }}
       >
-        <h2 className="text-white font-bold px-4 py-8 text-2xl font-inter">
+        <h2 className="text-[#ffffff] font-bold px-4 py-8 text-2xl font-inter">
           Disability and employment
         </h2>
 
         {/* Hidden Link initially, shown at the bottom on hover */}
         <Link
-          className="absolute bottom-0 hidden group-hover:block text-white font-bold px-4 py-4 w-full "
+          className="absolute bottom-0 hidden group-hover:block text-[#ffffff] font-bold px-4 py-4 w-full "
           href={"/"}
         >
           <div className="flex flex-row gap-2 justify-center items-center border rounded-md  py-2">
