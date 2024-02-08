@@ -14,18 +14,8 @@ const CardData = [
     fundingAgency: "SSHRC, NSERC, CCSIF",
     status: "Ongoing",
   },
-  {
-    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url('images/knowledge.png')",
-    title: "Improving Worker Health and Performance in Construction: Implementation and Adoption of Advanced Technologies",
-    fundingAgency: "SSHRC, NSERC, CCSIF",
-    status: "Ongoing",
-  },
-  {
-    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url('images/knowledge.png')",
-    title: "Improving Worker Health and Performance in Construction: Implementation and Adoption of Advanced Technologies",
-    fundingAgency: "SSHRC, NSERC, CCSIF",
-    status: "Ongoing",
-  },
+  
+  
   // Add more card data as needed
 ];
 
