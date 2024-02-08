@@ -106,14 +106,14 @@ const Navbar = () => {
         </div>
 
         <div className=" hidden lg:block lg:w-auto">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-white">
             {navLinks.map((navLink, index) => (
               <li key={index}>
                 <details>
                   <summary>{navLink.title}</summary>
-                  <ul className="p-2 bg-base-100 rounded-t-none">
+                  <ul className="p-2 bg-base-100 rounded-t-none text-white">
                     {navLink.submenu.map((sublink, subindex) => (
-                      <li key={subindex}>
+                      <li key={subindex} >
                         <a href={sublink.path}>{sublink.title}</a>
                       </li>
                     ))}
