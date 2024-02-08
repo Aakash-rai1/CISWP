@@ -22,7 +22,7 @@ const navLinks = [
     title: "Applied Research",
     path: "#projects",
     submenu: [
-      { title: "Skilled Trades", path: "#skilled-trades" },
+      { title: "Skilled Trades", path: "skilledTrade" },
       { title: "Healthcare & First Response", path: "#healthcare" },
       { title: "Workforce Development", path: "#workforce" },
       { title: "EDI & Accessibility", path: "#edi" },
