@@ -111,7 +111,7 @@ const Navbar = () => {
               <li key={index}>
                 <details>
                   <summary>{navLink.title}</summary>
-                  <ul className="p-2 bg-base-100 rounded-t-none text-white">
+                  <ul className="p-2 bg-base-100 rounded-t-none text-white bg-[#121212]">
                     {navLink.submenu.map((sublink, subindex) => (
                       <li key={subindex} >
                         <a href={sublink.path}>{sublink.title}</a>
