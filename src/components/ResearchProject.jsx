@@ -75,7 +75,7 @@ const ResearchProject = () => {
         }}
       >
         <h2 className="text-white font-bold px-4 py-8 text-2xl font-inter">
-          Supporting Canada's frontline
+          Supporting Canada&apos;s frontline
         </h2>
 
         {/* Hidden Link initially, shown at the bottom on hover */}
