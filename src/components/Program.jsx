@@ -34,7 +34,7 @@ const Program = () => {
         className="mySwiper2 rounded-tr-3xl rounded-tl-3xl"
       >
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
-          <div className="absolute z-10 p-16 align-middle">
+          <div className="absolute z-10 p-16 align-middle text-white">
             <h2 className="font-inter font-bold text-xl mb-1">Knowledge transfer & Exchange</h2>
             <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
@@ -62,7 +62,7 @@ const Program = () => {
           ></div>
         </SwiperSlide>
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
-        <div className="absolute z-10 p-16 align-middle">
+        <div className="absolute z-10 p-16 align-middle  text-white">
             <h2 className="font-inter font-bold text-xl mb-1">Musculoskeletal Health</h2>
             <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
@@ -90,7 +90,7 @@ const Program = () => {
           ></div>
         </SwiperSlide>
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
-        <div className="absolute z-10 p-16 align-middle">
+        <div className="absolute z-10 p-16 align-middle text-white">
             <h2 className="font-inter font-bold text-xl mb-1">Mental Health & Wellness</h2>
             <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
@@ -118,7 +118,7 @@ const Program = () => {
           ></div>
         </SwiperSlide>
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
-        <div className="absolute z-10 p-16 align-middle">
+        <div className="absolute z-10 p-16 align-middle text-white">
             <h2 className="font-inter font-bold text-xl mb-1">Organizational Management System</h2>
             <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
@@ -146,7 +146,7 @@ const Program = () => {
           ></div>
         </SwiperSlide>
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
-        <div className="absolute z-10 p-16 align-middle">
+        <div className="absolute z-10 p-16 align-middle text-white">
             <h2 className="font-inter font-bold text-xl mb-1">Disability & Employment</h2>
             <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
@@ -175,7 +175,7 @@ const Program = () => {
         </SwiperSlide>
 
         <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
-        <div className="absolute z-10 p-16 align-middle">
+        <div className="absolute z-10 p-16 align-middle text-white">
             <h2 className="font-inter font-bold text-xl mb-1">Building workforce for tomorrow</h2>
             <p className="text-sm lg:text-base text-justify">
               Knowledge transfer and exchange (KTE) is vital for applying
@@ -216,7 +216,7 @@ const Program = () => {
         
       >
         <SwiperSlide
-          className="bg-title r"
+          className="bg-title r text-white"
           style={{
             display: "flex",
             alignItems: "center",
@@ -226,7 +226,7 @@ const Program = () => {
           <p style={{ margin: 0 }}>Knowledge transfer & Exchange</p>
         </SwiperSlide>
         <SwiperSlide
-          className="bg-title r"
+          className="bg-title r text-white"
           style={{
             display: "flex",
             alignItems: "center",
@@ -237,7 +237,7 @@ const Program = () => {
           <p style={{ margin: 0 }}>Musculoskeletal Health</p>
         </SwiperSlide>
         <SwiperSlide
-          className="bg-title r"
+          className="bg-title r text-white"
           style={{
             display: "flex",
             padding: "16px",
@@ -247,7 +247,7 @@ const Program = () => {
           <p style={{ margin: 0 }}>Mental Health & Wellness</p>
         </SwiperSlide>
         <SwiperSlide
-          className="bg-title r"
+          className="bg-title r text-white"
           style={{
             display: "flex",
             padding: "16px",
@@ -257,7 +257,7 @@ const Program = () => {
           <p style={{ margin: 0 }}>Organizational Management System</p>
         </SwiperSlide>
         <SwiperSlide
-          className="bg-title r"
+          className="bg-title r text-white"
           style={{
             display: "flex",
             padding: "16px",
@@ -267,7 +267,7 @@ const Program = () => {
           <p style={{ margin: 0 }}>Disability & Employment</p>
         </SwiperSlide>
         <SwiperSlide
-          className="bg-title r"
+          className="bg-title r text-white"
           style={{
             display: "flex",
             padding: "16px",

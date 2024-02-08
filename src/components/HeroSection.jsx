@@ -51,12 +51,12 @@ const HeroSection = () => {
           className="bg-primaryG rounded-md"
           style={{ height: "auto", width: "100%" }}
         >
-          <div className="px-4 py-6">
+          <div className="px-4 py-6 text-white">
             <h3 className="justify-center text-xl font-black font-inter">
               The Ontario Skilled Trades Occupational Exposure and Demands
               Survey
             </h3>
-            <p className="text-sm mt-2">
+            <p className="text-sm mt-2  text-white">
               If you work, or are a student or apprentice in the skilled trades,
               complete this survey to be entered into a draw to win one of 100
               <span className="font-bold text-secondaryLight">
