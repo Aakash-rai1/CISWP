@@ -27,7 +27,7 @@ const page = () => {
           height: "365px",
         }}
       >
-        <div className="absolute  bg-primaryG bg-opacity-70 w-auto h-auto px-10 py-10 mx-4 mt-32 md:ml-16 lg:ml-56">
+        <div className="absolute  bg-primaryG bg-opacity-70 w-auto h-auto px-10 py-10 mx-4 mt-32 md:ml-16 lg:ml-56 text-white">
           <h2 className="font-bold text-2xl mb-2">Welcome to the START Lab.</h2>
           <p>
             The START Lab consists of equipments that can measure multiple{" "}

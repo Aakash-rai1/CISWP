@@ -112,16 +112,16 @@ const Page = () => {
                   <details>
                     <summary>Categories</summary>
                     <ul className="rounded-t-none">
-                      <div className="form-control mt-2 mb-3">
+                      <div className="form-control mt-2 mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
                           />
-                          <span>Centre for Supply Chain Innovation</span>
+                          <p className="w-full text-wrap">Centre for Supply Chain Innovation</p>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
+                      <div className="form-control mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2">
                           <input
                             type="checkbox"
@@ -130,7 +130,7 @@ const Page = () => {
                           <span>SMART Centre</span>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
+                      <div className="form-control mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2">
                           <input
                             type="checkbox"
@@ -139,7 +139,7 @@ const Page = () => {
                           <span>CISWP</span>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
+                      <div className="form-control mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2">
                           <input
                             type="checkbox"
@@ -148,7 +148,7 @@ const Page = () => {
                           <span>Conestoga Food Research & Innovation Lab</span>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
+                      <div className="form-control mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2">
                           <input
                             type="checkbox"
@@ -157,7 +157,7 @@ const Page = () => {
                           <span>Conestoga Entrepreneurship Collective</span>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
+                      <div className="form-control mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2">
                           <input
                             type="checkbox"
