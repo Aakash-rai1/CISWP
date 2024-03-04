@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 
 const inter = Jost({ subsets: ['latin'] })
 
+
 export const metadata = {
   title: 'CISWP Website',
   description: '',

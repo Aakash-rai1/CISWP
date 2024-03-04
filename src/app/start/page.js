@@ -202,7 +202,7 @@ const page = () => {
                 alt="Picture of the author"
                 style={{
                   position: "absolute",
-                  width: "52%",
+                  width: "50%",
                   height: "100%",
                   objectFit: "cover",
                   overflow: "visible",

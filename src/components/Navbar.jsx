@@ -33,8 +33,8 @@ const navLinks = [
     path: "#labs",
     submenu: [
       { title: "START Lab", path: "start" },
-      { title: "STRIDE LAB", path: "#stride-lab" },
-      { title: "Field to Lab to Field", path: "#field-lab" },
+      { title: "STRIDE LAB", path: "stride" },
+      { title: "Field to Lab to Field", path: "fieldtolab" },
     ],
   },
   {
@@ -65,6 +65,11 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [openMenuIndex, setOpenMenuIndex] = useState(null);
+
+  const toggleMenu = (index) => {
+    setOpenMenuIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
@@ -109,16 +114,23 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 text-white">
             {navLinks.map((navLink, index) => (
               <li key={index}>
-                <details>
-                  <summary>{navLink.title}</summary>
-                  <ul className="p-2 bg-base-100 rounded-t-none text-white bg-[#121212]">
-                    {navLink.submenu.map((sublink, subindex) => (
-                      <li key={subindex} >
-                        <a href={sublink.path}>{sublink.title}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
+                <div className="relative">
+                  <button
+                    onClick={() => toggleMenu(index)}
+                    className="focus:outline-none flex flex-row"
+                  >
+                    {navLink.title} <ChevronDownIcon className="w-5 h-5" />
+                  </button>
+                  {openMenuIndex === index && (
+                    <ul className="absolute top-full left-0 mt-1 p-2 bg-base-100 rounded-t-none text-white bg-[#121212] rounded-lg shadow-lg">
+                      {navLink.submenu.map((sublink, subindex) => (
+                        <li key={subindex}> 
+                          <a href={sublink.path}>{sublink.title}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </li>
             ))}
           </ul>
