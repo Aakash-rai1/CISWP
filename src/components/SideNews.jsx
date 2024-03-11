@@ -22,7 +22,7 @@ const news = [
 const SideNews = () => {
   return (
     <>
-      <h2 className="text-title font-bold mt-12 mb-4 font-inter text-xl">News</h2>
+      <h2 className="text-title font-bold mt-12 mb-4 font-inter text-xl">More inside Conestoga</h2>
       {news.map(({ title, date }, index) => (
         <NewsContent key={index} title={title} date={date} />
       ))}

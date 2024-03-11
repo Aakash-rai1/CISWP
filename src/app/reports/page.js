@@ -55,7 +55,7 @@ const Page = () => {
             </h2>
 
             <div className="flex flex-col gap-2">
-              <ul className="menu menu-vertical  text-title pr-40">
+              <ul className="menu menu-vertical  text-title pr-28">
                 <li>
                   <details>
                     <summary>Release year</summary>
@@ -112,7 +112,7 @@ const Page = () => {
                   <details>
                     <summary>Categories</summary>
                     <ul className="rounded-t-none">
-                      <div className="form-control mt-2 mb-3 w-full  md:w-1/2">
+                      <div className="form-control mt-2 mb-3 w-full ">
                         <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
@@ -120,8 +120,10 @@ const Page = () => {
                           />
                           <p className="w-full text-wrap">Centre for Supply Chain Innovation</p>
                         </label>
-                      </div>
-                      <div className="form-control mb-3 w-full  md:w-1/2">
+                      </div>                     
+                    
+                     
+                      <div className="form-control mt-2 mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2">
                           <input
                             type="checkbox"
@@ -130,6 +132,18 @@ const Page = () => {
                           <span>SMART Centre</span>
                         </label>
                       </div>
+
+                      <div className="form-control mt-2 mb-3 w-full ">
+                        <label className="flex items-center gap-2  whitespace-normal">
+                          <input
+                            type="checkbox"
+                            className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
+                          />
+                          <p className="w-full text-wrap">Conestoga Food Research & Innovation Lab</p>
+                        </label>
+                      </div>
+                      
+
                       <div className="form-control mb-3 w-full  md:w-1/2">
                         <label className="flex items-center gap-2">
                           <input
@@ -139,62 +153,53 @@ const Page = () => {
                           <span>CISWP</span>
                         </label>
                       </div>
-                      <div className="form-control mb-3 w-full  md:w-1/2">
-                        <label className="flex items-center gap-2">
+                      
+                      <div className="form-control mt-2 mb-3 w-full ">
+                        <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
                           />
-                          <span>Conestoga Food Research & Innovation Lab</span>
+                          <p className="w-full text-wrap">Conestoga Entrepreneurship Collective</p>
                         </label>
                       </div>
-                      <div className="form-control mb-3 w-full  md:w-1/2">
-                        <label className="flex items-center gap-2">
+                      <div className="form-control mt-2 mb-3 w-full ">
+                        <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
                           />
-                          <span>Conestoga Entrepreneurship Collective</span>
+                          <p className="w-full text-wrap">Centre for Health Care Research & Innovation</p>
                         </label>
                       </div>
-                      <div className="form-control mb-3 w-full  md:w-1/2">
-                        <label className="flex items-center gap-2">
+                      <div className="form-control mt-2 mb-3 w-full ">
+                        <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
                           />
-                          <span>
-                            Centre for Health Care Research & Innovation
-                          </span>
+                          <p className="w-full text-wrap">Research & Innovation Impact Report</p>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
-                        <label className="flex items-center gap-2">
+                      <div className="form-control mt-2 mb-3 w-full ">
+                        <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
                           />
-                          <span>Research & Innovation Impact Report</span>
+                          <p className="w-full text-wrap">Centre for Commercialization</p>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
-                        <label className="flex items-center gap-2">
+                      <div className="form-control mt-2 mb-3 w-full ">
+                        <label className="flex items-center gap-2  whitespace-normal">
                           <input
                             type="checkbox"
                             className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
                           />
-                          <span>Centre for Commercialization</span>
+                          <p className="w-full text-wrap">Non-centre affiliated research</p>
                         </label>
                       </div>
-                      <div className="form-control mb-3">
-                        <label className="flex items-center gap-2">
-                          <input
-                            type="checkbox"
-                            className="checkbox checkbox-sm border-[#aaaaaa] checked:border-[#087D73] checked:border-indigo-800 [--chkbg:#087D73] [--chkfg:#ffffff]"
-                          />
-                          <span>Non-centre affiliated research</span>
-                        </label>
-                      </div>
+                      
                     </ul>
                   </details>
                 </li>

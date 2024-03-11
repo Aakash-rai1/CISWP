@@ -15,7 +15,7 @@ const HeroSection = () => {
         <h2 className="font-bold text-2xl text-title font-inter mb-2">
           Building capacity for productive and sustainable work
         </h2>
-        <p className="text-paragraph mb-12 text-justify" >
+        <p className="text-paragraph text-md mb-12 text-justify" >
           The Canadian Institute for Safety, Wellness & Performance (CISWP) is
           committed to building productive and sustainable workplaces through a
           collaborative and transdisciplinary approach. CISWP’s goal is to
@@ -31,7 +31,7 @@ const HeroSection = () => {
         <h2 className="font-bold text-2xl font-inter text-title mb-2">
           CISWP’s research program
         </h2>
-        <p className="text-paragraph">
+        <p className="text-paragraph text-md">
           CISWP adopts a transdisciplinary and collaborative approach to build
           capacity for productive and sustainable work. Our research program is
           organized into seven overarching and overlapping research themes:
@@ -124,7 +124,7 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2" style={{width:"70%"}}>
               <h2 className="text-title font-semibold">
               Fatigue Risk Management for First Responders: State of Knowledge
 
@@ -151,7 +151,7 @@ const HeroSection = () => {
               quality={100}
             />
             
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2" style={{width:"70%"}} >
               <h2 className="text-title font-semibold">
               Fatigue Risk Management for First Responders: Current Landscape of
               Perspectives, Policies...
@@ -177,7 +177,7 @@ const HeroSection = () => {
               height={1500}
               quality={100}
             />
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2" style={{width:"70%"}}>
               <h2 className="text-title font-semibold">
               Work Disability Management of PTSI in Paramedic Service
               Organizations: A Needs Assessment

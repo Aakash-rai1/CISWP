@@ -25,7 +25,8 @@ module.exports = {
       secondaryLight:"#FCB03C",
       paragraph:"#303030",
       title:"#232323",
-      white:"#ffffff"
+      white:"#ffffff",
+      caption:"#5E5C5C"
     },
       dropShadow: {
         'xl': '0px 4px 15px rgba(0, 0, 0, 0.45)',

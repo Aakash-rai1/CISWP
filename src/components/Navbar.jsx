@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
@@ -66,9 +66,16 @@ const navLinks = [
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
+  const [iconRotated, setIconRotated] = useState(Array(navLinks.length).fill(false));
 
   const toggleMenu = (index) => {
     setOpenMenuIndex((prevIndex) => (prevIndex === index ? null : index));
+    setIconRotated((prevRotated) => {
+      const updatedRotated = prevRotated.map((value, idx) => {
+        return idx === index ? !value : false;
+      });
+      return updatedRotated;
+    });
   };
 
   return (
@@ -119,7 +126,7 @@ const Navbar = () => {
                     onClick={() => toggleMenu(index)}
                     className="focus:outline-none flex flex-row"
                   >
-                    {navLink.title} <ChevronDownIcon className="w-5 h-5" />
+                    {navLink.title} <ChevronDownIcon className={`w-5 h-5 transition-transform ${iconRotated[index] ? "rotate-180" : ""}`} />
                   </button>
                   {openMenuIndex === index && (
                     <ul className="absolute top-full left-0 mt-1 p-2 bg-base-100 rounded-t-none text-white bg-[#121212] rounded-lg shadow-lg">
