@@ -1,4 +1,5 @@
 "use client"
+import Footer from "@/components/Footer";
 import React from "react";
 
 const CardData = [
@@ -68,6 +69,7 @@ const Page = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

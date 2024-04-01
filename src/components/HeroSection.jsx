@@ -48,8 +48,8 @@ const HeroSection = () => {
       {/* side bar */}
       <div className="col-span-full mt-8 pl-0 lg:col-span-3 justify-end lg:mt-0 lg:pl-8">
         <div
-          className="bg-primaryG rounded-md"
-          style={{ height: "auto", width: "100%" }}
+          className="bg-primaryG rounded-md  mb-12"
+          style={{ height: "auto", width: "100%"}}
         >
           <div className="px-4 py-6 text-white">
             <h3 className="justify-center text-xl font-black font-inter">

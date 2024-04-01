@@ -2,11 +2,13 @@
 import React from "react";
 import SideNews from "@/components/SideNews";
 import { IoMdTime } from "react-icons/io";
+import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const Page = () => {
   const cardData = [
     {
-      backgroundImage: "/images/news1.png",
+      backgroundImage: "/images/news1.jpeg",
       title: "Symposium highlights research and scholarship at Conestoga",
       date: "Posted on December 3, 2021 11:01 PM",
       text: "More than 200 Conestoga employees representing all ten academic schools participated in the college’s Research and Scholarship Symposium on October 24 at Tapestry Hall in Cambridge The event was hosted in collaboration with Teaching & Learning, Degree Quality & Accreditation, and Research, Innovation & Entrepreneurship to showcase research and scholarship activity at the college and connect faculty to resources.",
@@ -36,73 +38,85 @@ const Page = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#F4F4F5]">
-      <div className="grid grid-cols-12 mt-12 mx-auto px-24 py-4">
-        <div className="col-span-full lg:col-span-9 pr-8">
-          <h2 className="font-bold text-4xl text-title font-inter mb-8">
-            News
-          </h2>
+      <div className="container mt-12 mx-auto px-16 py-4">
+        {/* title and search bar */}
+        <div class="grid grid-cols-12 mx-auto ">
+          <div className="col-span-full lg:col-span-9 mb-4">
+            <h2 class="font-bold text-4xl text-title font-inter ">News</h2>
+          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-auto">
-            {/* First Column */}
-            <div className="flex flex-col gap-8">
-              {evenData.map((card, index) => (
-                <NewsCard key={index} card={card} />
-              ))}
-            </div>
-            {/* Second Column */}
-            <div className="flex flex-col gap-8">
-              {oddData.map((card, index) => (
-                <NewsCard key={index} card={card} />
-              ))}
+          <div className="col-span-full pl-0 lg:col-span-3 mb-8 justify-end lg:mt-0 lg:pl-8">
+            <div className="flex justify-between bg-white py-1 pl-4 pr-2 w-full rounded-md bordered ">
+              <input
+                class="bg-white text-paragraph text-sm sm:w-full "
+                type="text"
+                placeholder="Search here..."
+              />
+              <button class="btn btn-sm text-white ml-2">Search</button>
             </div>
           </div>
         </div>
 
-        {/* Side Bar */}
-        <div className="col-span-full mt-8 pl-0 lg:col-span-3 justify-end lg:mt-0 lg:pl-8">
-          <label className="input input-bordered  flex items-center bg-white">
-            <input
-              className="bg-white w-full text-paragraph "
-              type="text"
-              placeholder="Search what you are looking for ..."
-            />
-            <button className="btn btn-sm text-white">Search</button>
-          </label>
-          <SideNews />
+        <div className="grid grid-cols-12 mx-auto ">
+          <div className="col-span-full lg:col-span-9 lg:pr-8 ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-auto">
+              {/* First Column */}
+              <div className="flex flex-col gap-8">
+                {evenData.map((card, index) => (
+                  <NewsCard key={index} card={card} />
+                ))}
+              </div>
+              {/* Second Column */}
+              <div className="flex flex-col gap-8">
+                {oddData.map((card, index) => (
+                  <NewsCard key={index} card={card} />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Side Bar */}
+          <div className="col-span-full pl-0 lg:col-span-3 justify-end lg:mt-0 lg:pl-8">
+            <SideNews />
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
 
 const NewsCard = ({ card }) => {
   return (
-    <div className="flex flex-col cursor-pointer">
-      {card.backgroundImage && (
-        <div
-          className="h-96 sm:h-80 md:h-72 lg:h-64 bg-white rounded-sm shadow-md hover:shadow-xl"
-          style={{
-            backgroundImage: `url('${card.backgroundImage}')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            marginBottom: "16px",
-            transition: "background-size 0.3s ease",
-          }}
-          onMouseEnter={(e) => (e.target.style.backgroundSize = "102%")}
-          onMouseLeave={(e) => (e.target.style.backgroundSize = "cover")}
-        />
-      )}
-      <h1
-        className="font-bold text-3xl text-title  mb-2"
-        style={{ fontFamily: "Times" }}
-      >
-        {card.title}
-      </h1>
-      <p className="text-paragraph text-md font-inter text-justify">
-        {card.text}
-      </p>
-      <p className="text-xs text-caption italic mt-2 ">{card.date}</p>
-    </div>
+    <Link href="/newsInside"> {/* Use href prop */}
+      <div className="flex flex-col cursor-pointer">
+        {card.backgroundImage && (
+          <div
+            className="h-96 sm:h-80 md:h-72 lg:h-64 bg-white rounded-sm shadow-md hover:shadow-xl"
+            style={{
+              backgroundImage: `url('${card.backgroundImage}')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              marginBottom: "16px",
+              transition: "background-size 0.3s ease",
+            }}
+            onMouseEnter={(e) => (e.target.style.backgroundSize = "102%")}
+            onMouseLeave={(e) => (e.target.style.backgroundSize = "cover")}
+          />
+        )}
+        <h1
+          className="font-bold text-3xl text-title  mb-2 "
+          style={{ fontFamily: "Times" }}
+        >
+          {card.title}
+        </h1>
+        <p className="text-paragraph text-md font-inter text-justify"
+         style={{fontFamily:"jost"}}>
+          {card.text}
+        </p>
+        <p className="text-xs text-caption italic mt-2 ">{card.date}</p>
+      </div>
+    </Link>
   );
 };
 

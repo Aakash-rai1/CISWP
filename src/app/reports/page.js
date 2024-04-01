@@ -47,7 +47,9 @@ const Page = () => {
   return (
     <>
       <div className="flex flex-col min-h-screen bg-[#F4F4F5]  ">
-        <div className="grid grid-cols-12 mt-12 mx-auto px-24 py-4">
+      <div className="container mt-12 mx-auto px-16 py-4">
+
+        <div className="grid grid-cols-12  mx-auto  ">
           {/* Sorting */}
           <div className="col-span-full lg:col-span-3">
             <h2 className="font-bold text-xl text-title font-inter mb-3">
@@ -209,9 +211,9 @@ const Page = () => {
 
           {/* publications */}
           <div className="col-span-full lg:col-span-9">
-            <h2 className="font-bold text-2xl text-title font-inter mb-8">
+            {/* <h2 className="font-bold text-2xl text-title font-inter mb-8">
               Publications
-            </h2>
+            </h2> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {cardData.map((card, index) => (
                 <div key={index} className="flex flex-col cursor-pointer">
@@ -243,6 +245,7 @@ const Page = () => {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         </div>
         <Footer />

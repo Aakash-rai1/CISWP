@@ -13,8 +13,8 @@ const navLinks = [
     title: "About CISWP",
     path: "#about",
     submenu: [
-      { title: "Mission & Values", path: "#mission" },
-      { title: "People", path: "#people" },
+      { title: "Mission & Values", path: "mission" },
+      { title: "People", path: "people" },
       { title: "Contact Us", path: "#contact" },
     ],
   },
@@ -50,7 +50,7 @@ const navLinks = [
     path: "#publications",
     submenu: [
       { title: "Scientific Report & Articles", path: "reports" },
-      { title: "Webinars", path: "#webinars" },
+      { title: "Webinars", path: "webinars" },
     ],
   },
   {
