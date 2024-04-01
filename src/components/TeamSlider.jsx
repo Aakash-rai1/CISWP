@@ -56,7 +56,7 @@ const TeamSlider = () => {
         className="text-title text-center font-bold text-4xl m-auto mt-16 font-inter"
         style={{ width: "55%" }}
       >
-        We’ve got an entire team <br /> dedicated to{" "}
+        We&apos;ve got an entire team <br /> dedicated to{" "}
         <span className="text-primaryG">
           {" "}
           Safety, Wellness <br /> & Performance.

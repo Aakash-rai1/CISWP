@@ -106,7 +106,7 @@ const Page = () => {
           className="text-title text-center font-bold text-4xl lg:text-5xl m-auto mt-4 font-inter"
           style={{ width: "80%" }}
         >
-          We’ve got an entire team dedicated to <br />
+          We&apos;ve got an entire team dedicated to <br />
           <span className="text-primaryG">
             {" "}
             Safety, Wellness & Performance.
