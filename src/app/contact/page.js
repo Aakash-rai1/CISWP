@@ -27,22 +27,22 @@ const Page = () => {
             <h3 className="font-bold font-inter text-primaryG text-4xl mb-2">
               Meet us
             </h3>
-            <div className="flex flex-col gap-4 mt-2">
+            <div className="flex flex-col gap-4 mt-3">
               <div className="flex flex-row gap-3 items-center">
                 <IoMailOutline className="h-7 w-7 text-primaryG" />
-                <p className="text-paragraph font-3xl font-semibold">
+                <p className="text-paragraph font-xl font-semibold">
                   ciswp@conestogac.on.ca
                 </p>
               </div>
               <div className="flex flex-row gap-3 items-center">
                 <HiOutlinePhone className="h-7 w-7 text-primaryG" />
-                <p className="text-paragraph font-3xl font-semibold">
+                <p className="text-paragraph font-xl font-semibold">
                   519-748-5220 Ext. 7115
                 </p>
               </div>
               <div className="flex flex-row gap-3 items-center">
                 <HiOutlineLocationMarker className="h-7 w-7 text-primaryG" />
-                <p className="text-paragraph font-3xl font-semibold">
+                <p className="text-paragraph font-xl font-semibold">
                   25 Reuter Dr, Cambridge, ON N3E 1A9
                 </p>
               </div>
