@@ -15,7 +15,7 @@ const navLinks = [
     submenu: [
       { title: "Mission & Values", path: "mission" },
       { title: "People", path: "people" },
-      { title: "Contact Us", path: "#contact" },
+      { title: "Contact Us", path: "contact" },
     ],
   },
   {
